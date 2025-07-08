@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Movecta – Do porto até você</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+        --font-display: "Montserrat", "sans-serif"; 
+        --color-green: #97FF00;
+        --color-blue: #0066FF;            
+    }  
+</style>  
+</head>
+<body class="font-sans antialiased text-gray-800">
+  
+  <section 
+    class="relative bg-cover bg-center py-20 sm:py-50 pb-50"
+    style="background-image: url('assets/banner.webp');">    
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 container mx-auto px-5 h-full flex flex-col justify-center text-white">      
+      <img src="assets/logo-inverse.webp" alt="Movecta" class="w-60 h-auto mb-15 sm:mb-30">
+      <h1 class="text-[80px] sm:text-[180px] font-extrabold leading-15 sm:leading-35">
+        <span class="block">MOVI</span>
+        <span class="block text-green">MENTE</span>
+        <span class="block text-4xl sm:text-5xl">COM A MOVECTA.</span>
+      </h1>
+      <div class="mt-10 max-w-2xl space-y-4 text-sm sm:text-base">
+        <p>
+          Com mais de 70 anos de experiência, a Movecta está presente nos principais hubs portuários do Brasil — São Paulo, Santa Catarina e Pernambuco —
+          com 8 unidades operacionais, 4 terminais alfandegados e mais de 430 mil m² de infraestrutura.
+        </p>
+        <p>
+          Somos o único operador logístico com terminais alfandegados nos três maiores portos do país, incluindo o único terminal frigorificado
+          alfandegado do Porto de Santos. Lideramos em cargas de projeto no Porto de Suape e estamos entre os maiores operadores logísticos
+          de produtos químicos do Brasil.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-6 lg:px-16 grid grid-cols-1 sm:grid-cols-3 gap-12">
+      <div class="flex flex-col items-center sm:items-start space-y-4">
+        <div class="overflow-hidden rounded-2xl w-50 lg:w-70 h-auto">
+          <img
+            src="assets/movimento-que-descomplica.webp"
+            alt="Movimento que descomplica"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <h3 class="text-2xl font-bold text-blue text-center sm:text-start">Movimento que<br>descomplica</h3>
+      </div>      
+      <div class="flex flex-col  items-center sm:items-start space-y-4">
+        <div class="overflow-hidden rounded-2xl w-50 lg:w-70 h-auto">
+          <img
+            src="assets/movimento-resolve.webp"
+            alt="Movimento que resolve"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <h3 class="text-2xl font-bold text-blue text-center sm:text-start">Movimento<br>que resolve</h3>
+      </div>
+     
+      <div class="flex flex-col  items-center sm:items-start space-y-4">
+        <div class="overflow-hidden rounded-2xl w-50 lg:w-70 h-auto">
+          <img
+            src="assets/movimento-cuida-de-tudo.webp"
+            alt="Movimento que cuida de tudo"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <h3 class="text-2xl font-bold text-blue text-center sm:text-start">Movimento<br>que cuida de tudo</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6">
+        Preencha os dados abaixo<br>
+        e receba uma solução logística<br>
+        feita para o seu negócio.
+      </h2>
+
+      <form action="#" method="POST" class="space-y-4">
+        <input
+          type="text"
+          name="nome"
+          placeholder="Seu nome"
+          class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue"
+        />
+        <input
+          type="text"
+          name="empresa"
+          placeholder="Nome da Empresa"
+          class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="E-mail"
+          class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue"
+        />
+        <input
+          type="tel"
+          name="telefone"
+          placeholder="Telefone/WhatsApp"
+          class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue"
+        />
+
+        <fieldset class="mt-4">
+          <legend class="text-sm">Já opera com comércio exterior?</legend>
+          <div class="flex items-center gap-6 mt-2">
+            <label class="flex items-center">
+              <input type="radio" name="comercio_exterior" value="sim" class="form-radio h-5 w-5 text-blue" />
+              <span class="ml-2">Sim</span>
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="comercio_exterior" value="nao" class="form-radio h-5 w-5 text-blue" />
+              <span class="ml-2">Não</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button
+          type="submit"
+          class="mt-6 bg-blue hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+  </section>
+  
+  <footer class="bg-blue text-white">
+    <div class="container mx-auto px-6 lg:px-16 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">    
+      <div class="space-y-3">
+        <h4 class="font-bold">Entre em contato<br>pelos canais:</h4>
+        <div class="flex items-start gap-2">
+           <img src="assets/icon-phone.webp" alt="Telefone" class="w-5 h-5 mt-1">
+           <a href="tel:1140043346" class="hover:opacity-75 text-sm">
+               <span>4004–3346</span>
+               <p>(Disponível de segunda a sexta, das 08h às 18h)</p>
+           </a>
+        </div>
+        <div class="flex items-start gap-2">
+           <img src="assets/icon-whatsapp.webp" alt="WhatsApp" class="w-5 h-5 mt-1">
+           <a href="https://" target="_blank" class="hover:opacity-75 text-sm">
+               <span>(11) 99511–3557 </span>
+               <p>(Apenas mensagens)</p>
+           </a>
+        </div>       
+      </div>
+
+      <div class="space-y-3">
+        <h4 class="font-bold">Conecte-se<br>com a Movecta:</h4>
+        <div class="flex items-center space-x-2 text-2xl">
+          <a href="#" aria-label="Instagram" class="hover:opacity-75">
+            <img src="assets/icon-instagram.webp" alt="Instagram" class="w-5 h-5">
+          </a>
+          <a href="#" aria-label="Facebook" class="hover:opacity-75">
+            <img src="assets/icon-facebook.webp" alt="Facebook" class="w-5 h-5">
+          </a>
+          <a href="#" aria-label="LinkedIn" class="hover:opacity-75">
+            <img src="assets/icon-linkedin.webp" alt="LinkedIn" class="w-5 h-5">
+          </a>
+           <p class="text-sm">@movecta</p>
+        </div>       
+      </div>
+      
+      <div class="space-y-3">
+        <h4 class="font-bold">Acesse<br>nosso site:</h4>
+        <div class="flex items-center">
+            <img src="assets/icon-site.webp" alt="Site" class="w-5 h-5 mr-2">
+            <a href="https://movecta.com.br" class="hover:opacity-80">movecta.com.br</a>
+        </div>
+      </div>
+      
+      <div>
+        <img src="assets/logo.webp" alt="Movecta" class="w-60 h-auto mb-2">       
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
