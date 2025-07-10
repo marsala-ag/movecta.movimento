@@ -1,0 +1,108 @@
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" class="stylingblock-content-wrapper" style="min-width: 100%; "><tr><td class="stylingblock-content-wrapper camarker-inner">
+<form id="smartcapture-block-ms7csc2gn2" class="smartcapture-content-wrapper fuelux" novalidate="novalidate">
+ 
+<style id="smartcapture-styles-ms7csc2gn2">
+ #smartcapture-block-ms7csc2gn2 {
+  background-color:#FFFFFF;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:left;margin:0px;padding:19px;
+ }
+
+ #smartcapture-block-ms7csc2gn2 .smartcapture-controls {
+  padding-bottom: 10px;
+ }
+
+ #smartcapture-block-ms7csc2gn2 .smartcapture-controls .sc-formfield-label,
+ #smartcapture-block-ms7csc2gn2 .smartcapture-controls .sc-formfield-label label,
+ #smartcapture-block-ms7csc2gn2 .smartcapture-controls .sc-formfield-input label {
+  color:#000000;font-family:Tahoma, Geneva, sans-serif;font-size:16px;
+ }
+
+ #smartcapture-block-ms7csc2gn2 input[type="radio"],
+ #smartcapture-block-ms7csc2gn2 input[type="checkbox"] {
+  margin: 0 0.4em 3px 0;
+  vertical-align: middle;
+ }
+
+ #smartcapture-block-ms7csc2gn2 input[type="text"],
+ #smartcapture-block-ms7csc2gn2 input[type="email"],
+ #smartcapture-block-ms7csc2gn2 input[type="number"] {
+  width:200px;
+ }
+
+ #smartcapture-block-ms7csc2gn2 .sc-button {
+  background-color:#006EFF;border-color:#006EFF;border-radius:3px;border-style:solid;-webkit-border-radius:3px;-moz-border-radius:3px;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:normal;padding:10px;
+ }
+
+ #smartcapture-block-ms7csc2gn2 .smartcapture-submit-button-wrapper {
+  padding-bottom:10px;text-align:center;
+ }
+
+ #smartcapture-block-ms7csc2gn2 .date-dropdown-select-boxes input {
+  display: none;
+ }
+
+ #smartcapture-block-ms7csc2gn2 .date-dropdown-select-boxes .select {
+  max-height: 28em;
+  max-width: 6em;
+  overflow: auto;
+ }
+</style>
+
+ <div data-type="slot" data-key="2sh0q3adls8"></div>
+ <div class="smartcapture-submit-button-wrapper">
+  <button type="submit" class="sc-button">Enviar</button>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<script id="smartcapture-script-ms7csc2gn2">
+ var scFormLoaded = function () {
+  window.ScForm.init({"gearID":"ms7csc2gn2","smartCaptureFormID":0,"sourceKey":"9DE97F68-CC13-4D02-AB8A-93D6BB1E7D40","source":"dataExtension","triggeredSend":"","confirmationMessage":"<div style=\"text-align: center;\">\n\t<span style=\"font-family:Tahoma,Geneva,sans-serif;\">Recebemos suas informa&ccedil;&otilde;es, em breve um dos nossos representantes entrar&aacute; em contato!!!</span></div>","buttonText":"Enviar","formStyling":{"background-color":"#FFFFFF","margin-top":"0px","margin-right":"0px","margin-bottom":"0px","margin-left":"0px","padding-top":"0px","padding-right":"0px","padding-bottom":"0px","padding-left":"0px","text-align":"left","margin":"0px","padding":"19px"},"fieldStyling":{"width":"200px"},"buttonStyling":{"background-color":"#006EFF","border-color":"#006EFF","border-radius":"3px","border-style":"solid","-webkit-border-radius":"3px","-moz-border-radius":"3px","color":"#FFFFFF","font-family":"Arial, Helvetica, sans-serif","font-size":"16px","line-height":"normal","padding":"10px"},"onSubmitGotoUrlType":2});
+ };
+ var scAppDomain = 'cloudpages.mc-content.com';
+ var scAppBasePath = '/CloudPages';
+ (function () {
+  var appDomain = '<ctrl:eval>Platform.Variable.GetValue("@appDomain")</ctrl:eval>';
+  if (appDomain.indexOf('qa') !== -1) {
+   scAppDomain = 'cloudpages-qa.mc-content.com';
+   scAppBasePath = '/CloudPages_V1';
+  }
+ }());
+ window.appDomain = window.appDomain || scAppDomain;
+ window.contentDetail = window.contentDetail || <ctrl:eval>Platform.Variable.GetValue('@contentDetail')||{}</ctrl:eval>;
+ if (!window.ScForm || !window.ScForm.init) {
+  var head = document.getElementsByTagName('head')[0];
+  var id = 'smartcapture-formjs-script';
+  var script = document.getElementById(id);
+  var domain = window.appDomain;
+  var el;
+  if (!script) {
+   if (domain) {
+    domain = '//' + domain;
+   }
+   el = document.createElement('script');
+   el.async = true;
+   el.id = id;
+   el.src = domain + scAppBasePath + '/lib/smartcapture-formjs.js';
+   el.onload = scFormLoaded;
+   head.appendChild(el);
+  } else {
+   if (script.addEventListener) {
+    script.addEventListener('load', scFormLoaded);
+   } else if (script.attachEvent) {
+    script.attachEvent('onload', scFormLoaded);
+   }
+  }
+ } else {
+  scFormLoaded();
+ }
+</script>
+
+</form>
+</td></tr></table>
